@@ -1,0 +1,19 @@
+.transactions {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 80%;
+  min-height: 300px;
+}
+
+.transactions-create {
+  flex: 1 0 0;
+  margin: 10px;
+  width: 30%;
+}
+
+.transactions-list   {
+  flex: 3 0 0;
+  margin: 10px;
+  width: 30%;
+}

@@ -1,0 +1,86 @@
+<div class="recent-transactions">
+  <div class="widget_header">
+    <p class="header_title_logo"></p>
+    <p class="header_title">
+    {{ 'TRANSACTIONS.LIST.TITLE' | translate }}
+    </p>
+  </div>
+
+  <div class="recent-transactions__search_sort">
+    <div class="recent-transactions__search">
+      <input
+        class="recent-transactions__search_input"
+        type="search"
+        (input)="searchBeneficiaries($event.target.value)"
+        (search)="searchBeneficiaries('')"
+        placeholder="{{ 'TRANSACTIONS.LIST.SEARCH_PLACEHOLDER' | translate }}"
+      />
+    </div>
+
+    <div class="recent-transactions__sort">
+      <p class="recent-transactions__label">
+        {{ 'TRANSACTIONS.LIST.SORT_BY' | translate }}
+      </p>
+
+      <span
+        class="recent-transactions__sort"
+        (click)="sort(sortableColumns.Date)"
+        [ngClass]="[arrowClass]"
+      >
+        {{ 'TRANSACTIONS.LIST.DATE' | translate }}
+      </span>
+
+      <span
+        class="recent-transactions__sort"
+        (click)="sort(sortableColumns.Beneficiaries)"
+        [ngClass]="[arrowClass]"
+      >
+        {{ 'TRANSACTIONS.LIST.BENEFICIARIES' | translate }}
+      </span>
+
+      <span
+        class="recent-transactions__sort"
+        (click)="sort(sortableColumns.Amount)"
+        [ngClass]="[arrowClass]"
+      >
+        {{ 'TRANSACTIONS.LIST.AMOUNT' | translate }}
+      </span>
+    </div>
+  </div>
+
+  <ul class="recent-transactions__list">
+    <li class="recent-transactions__list_item" *ngFor="let transaction of currentTransactions">
+      <span
+        class="recent-transactions__list_category-code"
+        [style.backgroundColor]="transaction.categoryCode"
+      ></span>
+
+      <span class="recent-transactions__list_date">
+        {{transaction.dates.valueDate | date:'MMM d'}}
+      </span>
+
+      <span class="recent-transactions__list_logo">
+        <img
+          class="recent-transactions__list_logo_image"
+          alt="{{ transaction.merchant.name.toLowerCase() }}-logo"
+          src="assets/icons/{{ transaction.merchant.name.toLowerCase().split(' ').join('-') }}.png"
+          onerror="this.src='assets/icons/default.png';"
+        >
+      </span>
+
+      <span class="recent-transactions__list_type">
+        <p>
+          <span class="recent-transactions__list_merchant-name">
+            {{ transaction.merchant.name }}
+          </span>
+
+          {{ transaction.transaction.type }}
+        </p>
+      </span>
+
+      <span class="recent-transactions__list_amount">
+        {{ 'TRANSACTIONS.LIST.MINUS' | translate }} {{ transaction.transaction.amountCurrency.amount | currency:transaction.transaction.amountCurrency.currencyCode:'symbol' }}
+      </span>
+    </li>
+  </ul>
+</div>

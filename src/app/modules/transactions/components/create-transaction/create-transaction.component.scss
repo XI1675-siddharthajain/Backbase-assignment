@@ -1,0 +1,84 @@
+@import "_variables";
+
+.create-transaction {
+  box-shadow: 0 0 15px map-get($colors, shadow-gray);
+  background-color: map-get($colors, background-white);
+  padding-bottom: 15px;
+}
+
+.widget_header {
+  background-color: map-get($colors, header-blue);
+  display: inline-flex;
+  width: 100%;
+}
+.header_title {
+  text-align: center;
+  color: map-get($font-colors, font-white);
+  font-size: 18px;
+  width: 75%;
+}
+.header_title_logo {
+  background: url(/assets/icons/arrows.png);
+  height: 24px;
+  width: 28px;
+  margin-left: 15px;
+}
+
+.create-transaction__form {
+  display: block;
+  margin: 20px 15px;
+}
+
+.create-transaction__form::after {
+  display: table;
+  clear: both;
+  width: 100%;
+  content: "";
+}
+
+.create-transaction__field-container {
+  margin-bottom: 15px;
+}
+
+.create-transaction__label {
+  display: block;
+  margin: 5px 0;
+  text-transform: uppercase;
+  color: map-get($font-colors, font-dark-gray);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.create-transaction__input {
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid map-get($colors, border-light-gray);
+  padding: 5px 0;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.create-transaction__input:disabled {
+  opacity: 0.5;
+}
+
+.create-transaction__submit {
+  float: right;
+  margin-top: 15px;
+  border: 0;
+  border-radius: 4px;
+  background-color: map-get($colors, button-orange);
+  cursor: pointer;
+  padding: 10px 0;
+  width: 70%;
+  text-transform: uppercase;
+  color: map-get($font-colors, font-white);
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.create-transaction__submit:disabled {
+  opacity: 0.5;
+  background-color: map-get($colors, button-orange);
+}

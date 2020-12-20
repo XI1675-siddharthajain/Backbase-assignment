@@ -1,0 +1,20 @@
+{
+  "TRANSACTIONS": {
+    "CREATE": {
+      "TITLE": "Make a Transfer",
+      "FROM": "From Account",
+      "TO": "To Account",
+      "AMOUNT": "Amount",
+      "SUBMIT": "Submit"
+    },
+    "LIST": {
+      "TITLE": "Recent Transactions",
+      "SEARCH_PLACEHOLDER": "Search by typing..",
+      "SORT_BY": "Sort by",
+      "DATE": "Date",
+      "BENEFICIARIES": "Beneficiaries",
+      "AMOUNT": "Amount",
+      "MINUS": "-"
+    }
+  }
+}

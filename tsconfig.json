@@ -1,0 +1,40 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "importHelpers": true,
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2015",
+    "lib": [
+      "es2017",
+      "dom",
+      "ES5",
+      "ES2015.Promise"
+    ],
+    "types": [
+      "node",
+    ],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "module": "es2020",
+    "baseUrl": "src",
+    "paths": {
+      "@AppStore": ["app/app.store"],
+      "@Components/*": ["app/shared/components/*"],
+      "@Consts/*": ["app/shared/consts/*"],
+      "@Environment": ["environments/environment"],
+      "@Interfaces/*": ["app/shared/interfaces/*"],
+      "@Modules/*": ["app/modules/*"],
+      "@Mocks/*": ["specs/mocks/*"],
+      "@Specs/*": ["specs/*"],
+      "@Pages/*": ["app/shared/pages/*"],
+      "@SharedModule": ["app/shared/shared.module"],
+      "@Types/*": ["app/shared/types/*"],
+    }
+  }
+}

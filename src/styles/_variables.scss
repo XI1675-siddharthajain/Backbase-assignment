@@ -1,0 +1,22 @@
+// sass-lint:disable no-color-hex
+$colors: (
+  shadow-gray: #666666,
+  header-blue: #007386,
+  background-white: #ffffff,
+  button-orange: #ee6f32,
+  border-light-gray: #cacaca,
+);
+
+$font-colors: (
+  font-white: #ffffff,
+  font-dark-gray: #333333,
+);
+
+$media-width: (
+  sm: 320px,
+  md-mobile: 400px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+  xxl: 1480px,
+);

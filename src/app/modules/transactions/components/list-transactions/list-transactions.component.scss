@@ -1,0 +1,173 @@
+@import "_variables";
+
+.recent-transactions {
+  border: 0;
+  box-shadow: 0 0 10px map-get($colors, shadow-gray);
+  background-color: map-get($colors, background-white);
+  padding: 0 0 15px;
+}
+
+.recent-transactions__list {
+  padding: 0 10px;
+  margin: 0px;
+}
+
+.widget_header {
+  background-color: map-get($colors, header-blue);
+  display: inline-flex;
+  width: 100%;
+}
+.header_title {
+  text-align: center;
+  color: map-get($font-colors, font-white);
+  font-size: 18px;
+  width: 85%;
+}
+.header_title_logo {
+  background: url(/assets/icons/briefcase.png);
+  height: 24px;
+  width: 28px;
+  margin-left: 15px;
+}
+
+.recent-transactions__list_item {
+  display: table;
+  border-right: 2px solid map-get($colors, border-light-gray);
+  width: 100%;
+}
+
+.recent-transactions__list_item:first-child {
+  border-top: 2px solid map-get($colors, border-light-gray);
+}
+
+.recent-transactions__list_category-code {
+  display: table-cell;
+  border-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 10px;
+  vertical-align: middle;
+}
+
+.recent-transactions__list_date {
+  display: table-cell;
+  border-bottom: 2px solid map-get($colors, border-light-gray);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 12%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.recent-transactions__list_amount {
+  display: table-cell;
+  border-bottom: 2px solid map-get($colors, border-light-gray);
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  width: 12%;
+  vertical-align: middle;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.recent-transactions__list_type {
+  display: table-cell;
+  border-bottom: 2px solid map-get($colors, border-light-gray);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.recent-transactions__list_merchant-name {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.recent-transactions__list_logo {
+  display: table-cell;
+  border-bottom: 2px solid map-get($colors, border-light-gray);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 12%;
+  vertical-align: middle;
+}
+
+.recent-transactions__list_logo_image {
+  display: table-cell;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 50%;
+  vertical-align: middle;
+}
+
+.recent-transactions__search_sort {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: map-get($colors, background-white);
+  min-height: 20px;
+}
+
+.recent-transactions__search {
+  margin: 15px 10px;
+  width: 45%;
+}
+
+.recent-transactions__sort {
+  display: block;
+  position: relative;
+  float: left;
+  cursor: pointer;
+  padding: 15px 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.recent-transactions__sort span {
+  border: 1px solid map-get($colors, border-light-gray);
+}
+
+.recent-transactions__search_input {
+  margin: 0;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid map-get($colors, border-light-gray);
+  padding: 5px 0;
+  width: 100%;
+  text-indent: 10px;
+  font-size: 20px;
+}
+
+.recent-transactions__label {
+  float: left;
+  padding: 0px 15px;
+  text-transform: initial;
+  font-size: 18px;
+}
+
+.up::before,
+.down::before {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 7px;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  content: " ";
+}
+
+.up::before {
+  border-width: 0 5px 10px;
+  border-color: transparent transparent map-get($colors, border-light-gray);
+}
+
+.down::before {
+  border-width: 10px 5px 0;
+  border-color: map-get($colors, border-light-gray) transparent transparent;
+}

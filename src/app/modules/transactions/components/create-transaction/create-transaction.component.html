@@ -1,0 +1,65 @@
+
+<div class="create-transaction">
+  <div class="widget_header">
+    <p class="header_title_logo"></p>
+    <p class="header_title">
+    {{ 'TRANSACTIONS.CREATE.TITLE' | translate }}
+    </p>
+  </div>
+
+  <form
+    class="create-transaction__form"
+    [formGroup]="createTransactionForm"
+    (submit)="createTransaction()"
+  >
+    <div class="create-transaction__field-container">
+      <label
+        class="create-transaction__label"
+        [for]="formFields.From">
+        {{ 'TRANSACTIONS.CREATE.FROM' | translate }}
+      </label>
+
+      <input
+        [formControlName]="formFields.From"
+        class="create-transaction__input"
+        type="text"
+      >
+    </div>
+
+    <div class="create-transaction__field-container">
+      <label class="create-transaction__label" [for]="formFields.To">
+        {{ 'TRANSACTIONS.CREATE.TO' | translate }}
+      </label>
+
+      <input
+        [formControlName]="formFields.To"
+        class="create-transaction__input"
+        type="text"
+        placeholder="Georgia Power Electric Company"
+      >
+    </div>
+
+    <div class="create-transaction__field-container">
+      <label
+        class="create-transaction__label"
+        [for]="formFields.Amount"
+      >
+        {{ 'TRANSACTIONS.CREATE.AMOUNT' | translate }}
+      </label>
+
+      <input
+        [formControlName]="formFields.Amount"
+        class="create-transaction__input"
+        placeholder="$ 0.00"
+      >
+    </div>
+
+    <button
+      type="submit"
+      class="create-transaction__submit"
+      [disabled]="isSubmitDisabled"
+    >
+      {{ 'TRANSACTIONS.CREATE.SUBMIT' | translate }}
+    </button>
+  </form>
+</div>
