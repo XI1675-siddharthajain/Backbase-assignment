@@ -154,9 +154,9 @@
 .down::before {
   display: block;
   position: absolute;
-  top: 10px;
-  right: 7px;
-  border-style: solid;
+  top: 17px;
+  right: 0px;
+  //border-style: solid;
   width: 0;
   height: 0;
   content: " ";
@@ -170,4 +170,19 @@
 .down::before {
   border-width: 10px 5px 0;
   border-color: map-get($colors, border-light-gray) transparent transparent;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .recent-transactions__search_sort {
+    display: block;
+  }
+  .recent-transactions__search {
+    width: 90%;
+  }
+  .recent-transactions__sort {
+    width: 93%;
+  }
+  .recent-transactions__list_amount {
+    width: 30%;
+  }
 }

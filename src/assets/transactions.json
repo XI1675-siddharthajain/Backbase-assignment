@@ -1,6 +1,6 @@
 {
   "data": [{
-      "categoryCode": "#12a580",
+      "categoryCode": "#046d53",
       "dates": {
         "valueDate": 1600493600000
       },
@@ -17,7 +17,7 @@
         "accountNumber": "SI64397745065188826"
       }
     }, {
-      "categoryCode": "#12a580",
+      "categoryCode": "#d51271",
       "dates": {
         "valueDate": 1600387200000
       },
@@ -51,7 +51,7 @@
         "accountNumber": "SI64397745065188826"
       }
     }, {
-      "categoryCode": "#12a580",
+      "categoryCode": "#d51271",
       "dates": {
         "valueDate": 1600300800000
       },
@@ -68,7 +68,7 @@
         "accountNumber": "SI64397745065188826"
       }
     }, {
-      "categoryCode": "#c12020",
+      "categoryCode": "#12a580",
       "dates": {
         "valueDate": 1600370800000
       },
@@ -85,7 +85,7 @@
         "accountNumber": "SI64397745065188826"
       }
     }, {
-      "categoryCode": "#c89616",
+      "categoryCode": "#d51271",
       "dates": {
         "valueDate": 1600214400000
       },
@@ -102,7 +102,7 @@
         "accountNumber": "SI64397745065188826"
       }
     }, {
-      "categoryCode": "#e25a2c",
+      "categoryCode": "#12a580",
       "dates": {
         "valueDate": 1476721442000
       },
@@ -152,7 +152,7 @@
         "accountNumber": "SI64397745065188826"
       }
     }, {
-      "categoryCode": "#12a580",
+      "categoryCode": "#d51271",
       "dates": {
         "valueDate": 1599955200000
       },
@@ -169,7 +169,7 @@
         "accountNumber": "SI64397745065188826"
       }
     }, {
-      "categoryCode": "#fbbb1b",
+      "categoryCode": "#12a580",
       "dates": {
         "valueDate": 1599868800000
       },

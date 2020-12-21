@@ -12,8 +12,20 @@
   width: 30%;
 }
 
-.transactions-list   {
+.transactions-list {
   flex: 3 0 0;
   margin: 10px;
   width: 30%;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .transactions {
+    display: block;
+  }
+  .recent-transactions__search_sort {
+    display: block;
+  }
+  .recent-transactions__search {
+    width: 90%;
+  }
 }

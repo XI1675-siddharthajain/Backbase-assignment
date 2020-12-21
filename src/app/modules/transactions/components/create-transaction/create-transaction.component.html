@@ -61,5 +61,6 @@
     >
       {{ 'TRANSACTIONS.CREATE.SUBMIT' | translate }}
     </button>
+    <div *ngIf="isSubmitDisabled" style="float: left; margin-top: 10px; color: red;">Balance amount should not be less than -500$/Є </div>
   </form>
 </div>

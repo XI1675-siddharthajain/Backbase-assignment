@@ -20,8 +20,6 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-Unit test coverage will be automatically generated and found in [Coverage](coverage/backbase-challenge/index.html)
-
 ## Project Structure
 
 Project is split into 2 main folders (modules and shared)
@@ -39,3 +37,8 @@ Project is split into 2 main folders (modules and shared)
   - Store which contains all the store logic from actions reducers effects selectors facade and the state interface
 
 - Shared contains all the shared dependencies that all other modules need. These mainly include UI components, consts, interfaces types etc... They are included in the shared module to make the code more DRY as without it all modules will need to include its own implementation of them
+
+## Functionality
+
+- Put disclaimer statement in create transaction widget for balance amount transaction limit.
+- Sorting based on column by column.

@@ -20,8 +20,9 @@ export class CreateTransactionComponent implements OnInit, OnDestroy {
 
   public readonly formFields: typeof FormFields = FormFields;
 
-  private readonly maxAmount: number = 500;
+  public readonly maxAmount: number = 500;
   private readonly unsubscribe$: Subject<void> = new Subject<void>();
+
 
   public constructor(
     private readonly formBuilder: FormBuilder,
